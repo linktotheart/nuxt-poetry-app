@@ -5,7 +5,9 @@
       <h2>{{ title }}</h2>
       <div class="section padding-large shadow">
         <ul>
-          <li v-for="author in authors.authors" :Key="author" v-html="author" />
+          <li v-for="(author, i) in authors.authors" :Key="i">
+            <nuxt-link :to="'author/' + author"> {{ author }} </nuxt-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -42,8 +44,6 @@ export default {
   align-items: center;
   text-align: left !important;
 }
-.section {
-  max-width: 660px;
-  width: 100%;
-}
+
+
 </style>
