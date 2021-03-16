@@ -1,7 +1,10 @@
 <template>
-  <main>
-    <Nuxt />
-  </main>
+  <div class="wrapper">
+    <Header />
+    <main>
+      <Nuxt keep-alive />
+    </main>
+  </div>
 </template>
 
 <style>

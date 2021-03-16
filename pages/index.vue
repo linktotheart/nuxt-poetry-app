@@ -1,18 +1,21 @@
 <template>
-  <div class="container">
+  <div class="container padding-top-large">
     <h1 class="title">Poems</h1>
-    <blockquote>
+    <div>
       <h2>{{ randomPoem[0].title }}</h2>
       <hr />
-      <p :key="i" v-for="(line, i) in randomPoem[0].lines">{{ line }}</p>
-      <br />
-      <br />
-      <br />
+      <p>
+        <span :key="i" v-for="(line, i) in randomPoem[0].lines">
+          {{ line }} <br />
+        </span>
+      </p>
+
+      <hr class="margin-top-large" />
 
       <em
         ><strong> {{ randomPoem[0].author }} </strong></em
       >
-    </blockquote>
+    </div>
   </div>
 </template>
 
