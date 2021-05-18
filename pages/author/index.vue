@@ -1,12 +1,13 @@
 <template>
-  <div class="container padding-top-large">
-    <h1 class="title">Poems</h1>
+  <div class="container mt-4">
     <div>
-      <h2>{{ title }}</h2>
+      <h2 class="text-center ">Peoms {{ title }}</h2>
       <div class="section padding-large shadow">
-        <ul>
-          <li v-for="(author, i) in authors.authors" :Key="i">
-            <nuxt-link :to="'author/' + author"> {{ author }} </nuxt-link>
+        <ul class="row row-cols-lg-4">
+          <li class="card " v-for="(author, i) in authors.authors" :Key="i">
+            <div class="card-body">
+              <nuxt-link class="" :to="'author/' + author"> {{ author }} </nuxt-link>
+            </div>
           </li>
         </ul>
       </div>
@@ -35,15 +36,6 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left !important;
-}
 
 
 </style>
