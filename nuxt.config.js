@@ -29,8 +29,13 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-purgecss',
   ],
 
+  
+  purgeCSS: {
+    // your settings here
+   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -53,3 +58,4 @@ export default {
   build: {
   }
 }
+    
