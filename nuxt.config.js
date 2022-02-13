@@ -1,10 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  ssr: "false",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-poetry-db',
+    title: 'NUXT PoetryDB',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

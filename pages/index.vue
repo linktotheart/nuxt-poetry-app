@@ -31,7 +31,7 @@
 								<span>...</span>
 							</p>
 							<div class="d-flex align-items-center  justify-content-between">
-                <nuxt-link
+                			<nuxt-link
 								class="btn btn-block  btn-secondary text-decoration-none"
 								:to="`/poems/${randomPoem[0].title}`"
 							>
@@ -67,7 +67,7 @@
 		</div>
 
     <footer class="mt-5 pt-5 border-top border-light pb-4 bg-gradient">
-        <p class="mb-0 text-muted text-center ">
+        <p class="mb-0 text-muted small text-center ">
           Made by <a href="https://github.com/linktotheart/">Pulkit Singh</a> in <a href="https://nuxtjs.org/">NuxtJS</a>
         </p>
       

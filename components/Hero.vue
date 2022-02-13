@@ -12,7 +12,7 @@
                             Poetry (derived from the Greek poiesis, "making") is a form of literature that uses aesthetic and often rhythmic qualities of language—such as phonaesthetics, sound symbolism, and metre—to evoke meanings in addition to, or in place of, the prosaic ostensible meaning.
                         </p>
                         <p>
-                            <nuxt-link to="/authors" class="btn btn-primary">View All</nuxt-link>
+                            <nuxt-link to="/author" class="btn btn-primary">View All</nuxt-link>
                         </p>
                     </div>
                     <div class="col-md-6">
